@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>BI Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,23 +18,26 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Услуги</a>
+          <a class="main-nav__link" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">О нас</a>
+          <a class="main-nav__link" href="#services">Услуги</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Контакты</a>
+          <a class="main-nav__link" href="#aboutus">О нас</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
-    <div class="first-screen">
-      <h1 class="first-screen__title">Услуги проектирования и разработки систем бизнес аналитики</h1>
-      <a class="first-screen__link" href="#">Тык</a>
-    </div>
   </header>
   <main class="main">
-    <section class="services">
+    <section class="first-screen">
+      <h1 class="first-screen__title">Услуги проектирования и разработки систем бизнес аналитики</h1>
+      <a class="first-screen__link" href="#">Тык</a>
+    </section>
+    <section id="services" class="services">
       <h2 class="services__title">Перечень услуг</h2>
       <ul class="services__list">
         <li class="services-item">
@@ -79,17 +83,19 @@
           </h3>
         </li>
       </ul>
-      <a class="services__link" href="#">Все услуги</a>
+      <a class="services__link" href="services.html">Все услуги</a>
     </section>
-    <section class="about-us">
+    <section id="aboutus" class="about-us">
       <h2 class="about-us__title">О нас</h2>
       <p class="about-us__text">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, recusandae. Adipisci iure exercitationem ab enim est culpa, fuga similique officiis. Fugit omnis provident molestiae vitae, libero eius rerum expedita maiores excepturi eligendi optio ea temporibus.
       </p>
-      <img class="about-us__image" src="" alt="Портрет Семёненко Константина BI Solutions">
-      <span class="about-us__signature">Константин</span>
+      <div>
+        <img class="about-us__image" src="img/avatar.jpg" alt="Портрет Семёненко Константина BI Solutions" width="1365" height="1369">
+        <span class="about-us__signature">Константин</span>
+      </div>
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <div class="contacts-block">
         <a class="contacts-block__link" href="#">+7 (926) 692-43-08</a>
@@ -100,15 +106,16 @@
   <footer class="footer">
     <ul class="social-meadia">
       <li class="social-meadia__item">
-        <a class="social-meadia__link" href="#">inst</a
-          ></li>
+        <a class="social-meadia__link" href="#">inst</a>
+      </li>
       <li class="social-meadia__item">
-        <a class="social-meadia__link" href="#">vk</a><
-        /li>
+        <a class="social-meadia__link" href="#">vk</a>
+      </li>
       <li class="social-meadia__item">
         <a class="social-meadia__link" href="#">tel</a>
       </li>
     </ul>
   </footer>
 </body>
+
 </html>

@@ -1,0 +1,14 @@
+.header {
+  background-color: $blue;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav__link {
+  color: $white;
+  text-transform: uppercase;
+  font-weight: bold;
+}

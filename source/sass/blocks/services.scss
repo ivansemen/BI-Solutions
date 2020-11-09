@@ -1,0 +1,24 @@
+.services__title {
+  color: $blue;
+  font-size: 27px;
+}
+
+.services__list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-item {
+  background-color: $blue;
+}
+
+.services-item__link {
+  color: $white;
+}
+
+.services__link {
+  background-color: $blue;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
