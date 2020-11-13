@@ -1,14 +1,162 @@
 .header {
   background-color: $blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 19px;
+}
+
+.header__nav-button {
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.header__nav-button--close::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $white;
+  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+}
+
+.header__nav-button--opened::after,
+.header__nav-button--opened::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  width: 18px;
+  height: 2px;
+  background-color: $white;
+  transform: rotate(45deg);
+}
+
+.header__nav-button--opened::after {
+  transform: rotate(-45deg);
 }
 
 .main-nav__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $white;
+}
+
+.main-nav__item:first-child {
+  border-top: 1px solid $white;
 }
 
 .main-nav__link {
   color: $white;
   text-transform: uppercase;
   font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-nav--hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+
+  .logo__image {
+    height: 30px;
+  }
+
+  .header {
+    background-color: $blackBlue;
+    display: flex;
+  }
+
+  .header__nav-button {
+    display: none;
+  }
+
+  .main-nav {
+    width: 100%;
+    order: 3;
+    background-color: $blue;
+  }
+
+  .main-nav__list {
+    display: flex;
+    background-color: $blue;
+    height: 30px;
+    align-items: center;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-nav--hidden {
+    display: block;
+  }
+
+  .main-nav__item {
+    border-bottom: none;
+    margin-right: 30px;
+  }
+
+  .main-nav__item:first-child {
+    border-top: none;
+  }
+
+  .main-nav__link {
+    padding: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 1220px;
+    margin-top: 200px;
+  }
+
+  .logo__image {
+    height: 40px;
+  }
+
+  .main-nav {
+    background-color: $blue;
+  }
+
+  .main-nav__list {
+    width: 1220px;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    font-weight: normal;
+  }
 }
