@@ -3,18 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>BI Solutions</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/ptsans-caption.woff2" as="font">
+  <link rel="preload" href="fonts/ptsans-caption-bold.woff2" as="font">
 </head>
 
 <body>
   <header class="header">
-    <div class="logo">
-      <a class="logo__link" href="#">
-        <img class="logo__image" src="" alt="Логотип">
-      </a>
-    </div>
-    <button class="header__nav-button" type="button"></button>
+    <a class="logo" href="#">
+      <img class="logo__image" src="img/logo.svg" alt="Логотип «BI Solutions»">
+    </a>
+    <button class="header__nav-button header__nav-button--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -31,12 +33,12 @@
         </li>
       </ul>
     </nav>
-  </header>
-  <main class="main">
     <section class="first-screen">
       <h1 class="first-screen__title">Услуги проектирования и разработки систем бизнес аналитики</h1>
-      <a class="first-screen__link" href="#">Тык</a>
+      <a class="first-screen__link" href="#">Наши Услуги</a>
     </section>
+  </header>
+  <main class="main">
     <section id="services" class="services">
       <h2 class="services__title">Перечень услуг</h2>
       <ul class="services__list">
@@ -83,39 +85,64 @@
           </h3>
         </li>
       </ul>
-      <a class="services__link" href="services.html">Все услуги</a>
     </section>
     <section id="aboutus" class="about-us">
-      <h2 class="about-us__title">О нас</h2>
-      <p class="about-us__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, recusandae. Adipisci iure exercitationem ab enim est culpa, fuga similique officiis. Fugit omnis provident molestiae vitae, libero eius rerum expedita maiores excepturi eligendi optio ea temporibus.
-      </p>
-      <div>
-        <img class="about-us__image" src="img/avatar.jpg" alt="Портрет Семёненко Константина BI Solutions" width="1365" height="1369">
-        <span class="about-us__signature">Константин</span>
+      <div class="about-us__wrapper">
+        <h2 class="about-us__title">О нас</h2>
+        <div class="about-us__container">
+          <p class="about-us__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, recusandae. Adipisci iure exercitationem ab enim est culpa, fuga similique officiis. Fugit omnis provident molestiae vitae, libero eius rerum expedita maiores excepturi eligendi optio ea temporibus.
+            <span class="about-us__signature">Константин</span>
+          </p>
+          <img class="about-us__image" src="img/avatar.jpg" alt="Портрет Семёненко Константина BI Solutions" width="1365" height="1369">
+        </div>
       </div>
     </section>
     <section id="contacts" class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <div class="contacts-block">
-        <a class="contacts-block__link" href="#">+7 (926) 692-43-08</a>
-        <span class="contacts-block__city">г. Москва</span>
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0 L50 100 L100 0 Z" fill="#8cb2fa" stroke="#8cb2fa"></path>
+      </svg>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts-block">
+          <a class="contacts-block__link" href="#">+7 (926) 692-43-08</a>
+          <span class="contacts-block__city">г. Москва</span>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <ul class="social-meadia">
-      <li class="social-meadia__item">
-        <a class="social-meadia__link" href="#">inst</a>
+    <ul class="social-media">
+      <li class="social-media__item">
+        <a class="social-meadia__link" href="#"><svg class="social-media__icon" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path d="M12.9203 1.30434C14.7884 1.30434 16.2414 2.76639 16.2414 4.64618V12.6875C16.2414 14.4628 14.7884 15.9249 13.0241 15.9249H5.03269C3.16457 15.9249 1.7116 14.4628 1.7116 12.5831V4.64618C1.7116 2.76639 3.16457 1.30434 5.03269 1.30434H12.9203ZM12.9203 0.26001H5.03269C2.64565 0.26001 0.673759 2.24423 0.673759 4.64618V12.6875C0.673759 14.985 2.64565 16.9692 5.03269 16.9692H13.0241C15.4111 16.9692 17.383 14.985 17.383 12.5831V4.64618C17.2792 2.24423 15.3073 0.26001 12.9203 0.26001Z" fill="#8CB2FA" />
+              <path d="M8.97648 5.37709C10.7408 5.37709 12.1938 6.83915 12.1938 8.6145C12.1938 10.3899 10.7408 11.8519 8.97648 11.8519C7.21215 11.8519 5.75917 10.3899 5.75917 8.6145C5.75917 6.83915 7.21215 5.37709 8.97648 5.37709ZM8.97648 4.33276C6.58944 4.33276 4.72133 6.21255 4.72133 8.6145C4.72133 11.0165 6.58944 12.8962 8.97648 12.8962C11.3635 12.8962 13.2316 11.0165 13.2316 8.6145C13.2316 6.21255 11.3635 4.33276 8.97648 4.33276Z" fill="#8CB2FA" />
+              <path d="M13.4392 5.06363C13.955 5.06363 14.3732 4.64282 14.3732 4.12373C14.3732 3.60464 13.955 3.18384 13.4392 3.18384C12.9233 3.18384 12.5051 3.60464 12.5051 4.12373C12.5051 4.64282 12.9233 5.06363 13.4392 5.06363Z" fill="#8CB2FA" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="16.7092" height="16.7092" fill="white" transform="translate(0.673759 0.26001)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
       </li>
-      <li class="social-meadia__item">
-        <a class="social-meadia__link" href="#">vk</a>
+      <li class="social-media__item">
+        <a class="social-meadia__link" href="#"><svg class="social-media__icon" width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6085 11.7301C17.449 11.4583 18.5251 13.5245 19.6706 14.3152C20.5304 14.9143 21.1889 14.785 21.1889 14.785L24.2422 14.741C24.2422 14.741 25.8378 14.6425 25.0835 13.3741C25.0211 13.2685 24.6413 12.4338 22.8109 10.7159C20.897 8.9189 21.1564 9.21005 23.4606 6.1033C24.8646 4.20952 25.4264 3.05284 25.2506 2.56027C25.0818 2.08616 24.0505 2.20931 24.0505 2.20931L20.6104 2.23306C20.2754 2.23394 19.9915 2.33773 19.8622 2.68605C19.8596 2.68957 19.3163 4.15147 18.5919 5.39434C17.0613 8.02347 16.4503 8.16332 16.1971 7.99884C15.6159 7.61797 15.7628 6.47097 15.7628 5.65558C15.7628 3.10738 16.1426 2.04482 15.019 1.77039C14.6436 1.67891 14.3693 1.6191 13.4119 1.6103C12.1881 1.59183 11.149 1.6103 10.56 1.89969C10.1687 2.09584 9.86894 2.52596 10.0509 2.55059C10.2795 2.58138 10.792 2.69133 11.0663 3.06604C11.4189 3.55158 11.4083 4.63964 11.4083 4.63964C11.4083 4.63964 11.6097 7.63996 10.9336 8.01203C10.4694 8.26712 9.83465 7.74639 8.46933 5.35916C7.77216 4.13827 7.24555 2.78896 7.24555 2.78896C7.24555 2.78896 7.14357 2.53828 6.95895 2.40106C6.73916 2.23833 6.43146 2.18644 6.43146 2.18644L3.16629 2.20755C3.16629 2.20755 2.67573 2.22162 2.4955 2.438C2.33549 2.62976 2.48231 3.02558 2.48231 3.02558C2.48231 3.02558 5.03976 9.07811 7.93568 12.1268C10.5907 14.9257 13.608 14.7401 13.608 14.7401H14.975C14.975 14.7401 15.3874 14.6926 15.5984 14.4657C15.7953 14.2546 15.7865 13.8579 15.7865 13.8579C15.7865 13.8579 15.7592 12.0028 16.6085 11.7301Z" fill="#8CB2FA" />
+          </svg>
+        </a>
       </li>
-      <li class="social-meadia__item">
-        <a class="social-meadia__link" href="#">tel</a>
+      <li class="social-media__item">
+        <a class="social-meadia__link" href="#"><svg class="social-media__icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+            <path fill="#8CB2FA" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z" /></svg>
+        </a>
       </li>
     </ul>
+    <div class="info-block"><a href="https://www.instagram.com/ivaaansemen/">ivansemen</a><span class="info-block__year">©2020</span></div>
   </footer>
+  <script src="js/navigation.js"></script>
 </body>
 
 </html>

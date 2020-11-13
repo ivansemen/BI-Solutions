@@ -1,0 +1,14 @@
+.info-block {
+  color: $white;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-block a {
+  color: inherit;
+}
+
+.info-block__year {
+  font-weight: bold;
+}
